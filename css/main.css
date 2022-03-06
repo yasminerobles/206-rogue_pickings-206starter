@@ -54,14 +54,17 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 15px 0 15px 0;
+}
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 28px 0;
+	width: 100%;
+	border-top: 3px solid #77a466;
 }
 header nav ul {
 	margin: 0;
@@ -71,8 +74,10 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 7px 10px;
+	display: inline-flex;
+    width: 100%;
+    justify-content: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -112,7 +117,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
@@ -121,13 +126,13 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-left: 0px solid #eee;
+	border-right: 0px solid #eee;
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0px;
 }
 
 .menu {
@@ -143,11 +148,15 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -167,48 +176,14 @@ footer span {
 	font-size: .875em;
 }
 
-/* Screen Size Less Than 1100px wide */
-@media only screen and (max-width: 1100px) {
 
-.section-one,
-.section-two,
-.section-three {
-	width: 100%;
-	border-top: 1px solid #eee;
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
 }
-.section-two {
-	border-left: 0px solid #eee;
-	border-right: 0px solid #eee;
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
 }
-.section-two h3,
-.section-three h3 {
-	padding: 10px 0px;
-}
-.reviews {
-	padding-left: 0;
-	padding-right: 0;
-}
-.address {
-	padding-left: 0;
-	padding-right: 0;
-}
-nav {
-	border-top: 3px solid #77a466;
-}
-header nav {
-	padding: 28px 0;
-	width: 100%;
-}
-header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: .875em;
-	padding: 7px 10px;
-	display: flex;
-	justify-content: center;
-}
-header h1 {
-	margin: 0;
-	padding: 15px 0 15px 0;
-}
-}
+
